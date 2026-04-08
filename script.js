@@ -39,6 +39,11 @@ function tryAutoPlay() {
   }
 }
 
+function startApp() {
+  tryAutoPlay();
+  goNext(0);
+}
+
 // ─── 씬 이동 ─────────────────────────────────
 function showScene(index) {
   document.querySelectorAll('.scene').forEach(s => s.classList.remove('active'));
@@ -53,6 +58,11 @@ function showScene(index) {
 function goNext(from) {
   const next = from + 1;
   if (next < TOTAL_SCENES) showScene(next);
+}
+
+function goPrev(from) {
+  const prev = from - 1;
+  if (prev >= 0) showScene(prev);
 }
 
 // ─── 슬라이더 ─────────────────────────────────
@@ -90,7 +100,7 @@ function shareKakao() {
       content: {
         title: '드라마틱 에필로그 — 봄',
         description: '나를 바라보시는 주님을 바라볼 때, 우리 삶에 겨울은 물러가고 봄이 찾아온다.',
-        imageUrl: pageUrl + 'images/kakao_preview.jpeg',
+        imageUrl: pageUrl + 'images/1.jpeg',
         link: { mobileWebUrl: pageUrl, webUrl: pageUrl },
       },
       buttons: [{

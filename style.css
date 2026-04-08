@@ -352,6 +352,9 @@ input[type="range"]::-webkit-slider-thumb {
     rgba(253,246,238,1) 70%, rgba(253,246,238,0));
   z-index: 100;
 }
+.nav-buttons {
+  display: flex; gap: 10px; width: 100%;
+}
 .dark-bar {
   background: linear-gradient(to top,
     rgba(26,21,32,1) 70%, transparent) !important;
@@ -377,7 +380,7 @@ input[type="range"]::-webkit-slider-thumb {
 .btn-primary:active { transform: scale(0.96); }
 
 .btn-next {
-  display: block; width: 100%;
+  flex: 1; display: block; width: 100%;
   background: white; color: #3a2e28;
   border: 1.5px solid #ddd0c8; border-radius: 50px;
   padding: 16px; font-size: 16px; font-weight: 600;
@@ -387,16 +390,33 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .btn-next:active { transform: scale(0.97); background: #f8f0e8; }
 
+.btn-prev {
+  flex: 1; display: block; width: 100%;
+  background: transparent; color: #8a7a6a;
+  border: 1.5px solid #e0d4cc; border-radius: 50px;
+  padding: 16px; font-size: 15px; font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer; letter-spacing: 0.03em;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-prev:active { transform: scale(0.97); background: #f8f0e8; }
+
 .spring-btn {
   background: #d44a70 !important;
   color: white !important;
   border-color: #d44a70 !important;
   box-shadow: 0 4px 18px rgba(212,74,112,0.3);
 }
+.spring-btn-prev {
+  border-color: #e8b0c0 !important; color: #b4607a !important; background: transparent !important;
+}
 .dark-btn {
   background: #5545aa !important;
   color: white !important;
   border-color: #5545aa !important;
+}
+.dark-btn-prev {
+  border-color: #5545aa !important; color: #b0a8c8 !important; background: transparent !important;
 }
 
 /* ──────────────────────────────────────────

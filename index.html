@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="드라마틱 에필로그 — 봄" />
   <meta property="og:description" content="나를 바라보시는 주님을 바라볼 때, 우리 삶에 겨울은 물러가고 봄이 찾아온다." />
-  <meta property="og:image" content="images/kakao_preview.jpeg" />
+  <meta property="og:image" content="images/1.jpeg" />
   <meta property="og:url" content="" />
 
   <!-- Kakao SDK -->
@@ -43,7 +43,7 @@
         <h1 class="main-title">봄</h1>
         <p class="scripture">요한복음 20:11–18</p>
         <p class="sound-hint">🎵 사운드를 켜고 감상해주세요</p>
-        <button class="btn-primary" onclick="goNext(0)">시작하기 →</button>
+        <button class="btn-primary" onclick="startApp()">시작하기 →</button>
       </div>
     </div>
   </section>
@@ -67,7 +67,7 @@
                  oninput="onSliderChange(this.value)" />
         </div>
         <p class="slider-hint">슬라이더를 움직이면 다음으로 넘어가요</p>
-      </div>
+      </div>`n      <div class="bottom-bar"><button class="btn-prev" onclick="goPrev(1)">← 이전</button></div>
     </div>
   </section>
 
@@ -89,7 +89,7 @@
           일주일을 버텨내느라<br/>진짜 고생 많았습니다. 💪
         </p>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(2)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(2)">← 이전</button><button class="btn-next" onclick="goNext(2)">다음 →</button></div>
     </div>
   </section>
 
@@ -111,7 +111,7 @@
           진짜 <strong>봄</strong>이 시작되는 날이에요.
         </div>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(3)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(3)">← 이전</button><button class="btn-next" onclick="goNext(3)">다음 →</button></div>
     </div>
   </section>
 
@@ -133,7 +133,7 @@
           동갑내기 친구, <strong>'예은이'</strong>를 봤습니다.
         </p>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(4)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(4)">← 이전</button><button class="btn-next" onclick="goNext(4)">다음 →</button></div>
     </div>
   </section>
 
@@ -164,7 +164,7 @@
           '지금 가면 걔가 나올지도 몰라'<br/>— 이 생각 하나뿐이었어요.
         </p>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(5)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(5)">← 이전</button><button class="btn-next" onclick="goNext(5)">다음 →</button></div>
     </div>
   </section>
 
@@ -186,7 +186,7 @@
           그토록 보고 싶던 예은이의 얼굴을<br/>드디어 <strong>'보았기'</strong> 때문이에요.
         </div>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(6)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(6)">← 이전</button><button class="btn-next" onclick="goNext(6)">다음 →</button></div>
     </div>
   </section>
 
@@ -211,7 +211,7 @@
           이걸 <strong>'못봄'</strong>이라고 불러요.
         </div>
       </div>
-      <div class="bottom-bar dark-bar"><button class="btn-next dark-btn" onclick="goNext(7)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(7)">← 이전</button><button class="btn-next dark-btn" onclick="goNext(7)">다음 →</button></div>
     </div>
   </section>
 
@@ -236,7 +236,7 @@
           그 아픔처럼 마음의 겨울을 살던<br/>한 여자가 2천 년 전 이 새벽,<br/>무덤가에 주저앉아 울고 있었어요.
         </p>
       </div>
-      <div class="bottom-bar dark-bar"><button class="btn-next dark-btn" onclick="goNext(8)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(8)">← 이전</button><button class="btn-next dark-btn" onclick="goNext(8)">다음 →</button></div>
     </div>
   </section>
 
@@ -261,7 +261,7 @@
           그런데 그분이 돌아가신 거예요.
         </div>
       </div>
-      <div class="bottom-bar dark-bar"><button class="btn-next dark-btn" onclick="goNext(9)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(9)">← 이전</button><button class="btn-next dark-btn" onclick="goNext(9)">다음 →</button></div>
     </div>
   </section>
 
@@ -285,7 +285,7 @@
           마리아는 짐승처럼 오열했어요.
         </div>
       </div>
-      <div class="bottom-bar dark-bar"><button class="btn-next dark-btn" onclick="goNext(10)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(10)">← 이전</button><button class="btn-next dark-btn" onclick="goNext(10)">다음 →</button></div>
     </div>
   </section>
 
@@ -308,7 +308,7 @@
           <strong>수건 정리</strong>라니요! 😮
         </div>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(11)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(11)">← 이전</button><button class="btn-next" onclick="goNext(11)">다음 →</button></div>
     </div>
   </section>
 
@@ -333,7 +333,7 @@
           주님은 이 여유 속에 계셨는데,<br/>마리아는 여전히 '못봄'의 겨울 속에 갇혀 있었어요.
         </p>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(12)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(12)">← 이전</button><button class="btn-next" onclick="goNext(12)">다음 →</button></div>
     </div>
   </section>
 
@@ -355,7 +355,7 @@
           마리아의 얼어붙은 시간에도<br/><strong>진짜 봄이 찾아온 거예요.</strong>
         </p>
       </div>
-      <div class="bottom-bar spring-bar"><button class="btn-next spring-btn" onclick="goNext(13)">다음 →</button></div>
+      <div class="bottom-bar spring-bar nav-buttons"><button class="btn-prev spring-btn-prev" onclick="goPrev(13)">← 이전</button><button class="btn-next spring-btn" onclick="goNext(13)">다음 →</button></div>
     </div>
   </section>
 
@@ -382,7 +382,7 @@
           진짜 주님의 목소리예요.
         </p>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(14)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(14)">← 이전</button><button class="btn-next" onclick="goNext(14)">다음 →</button></div>
     </div>
   </section>
 
@@ -410,7 +410,7 @@
           우리 인생의 겨울은 끝납니다. 🌸
         </div>
       </div>
-      <div class="bottom-bar spring-bar"><button class="btn-next spring-btn" onclick="goNext(15)">묵상하기 →</button></div>
+      <div class="bottom-bar spring-bar nav-buttons"><button class="btn-prev spring-btn-prev" onclick="goPrev(15)">← 이전</button><button class="btn-next spring-btn" onclick="goNext(15)">묵상하기 →</button></div>
     </div>
   </section>
 
@@ -424,7 +424,7 @@
         <p class="decision-main">나를 부르시는<br/>주님의 목소리를<br/>듣겠습니다.</p>
         <p class="decision-sub">주님은 지금도 내 이름을 부르고 계십니다.</p>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(16)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(16)">← 이전</button><button class="btn-next" onclick="goNext(16)">다음 →</button></div>
     </div>
   </section>
 
@@ -441,7 +441,7 @@
           주님이 내 이름을 부르신다면 어떤 기분일 것 같나요?"
         </div>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(17)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(17)">← 이전</button><button class="btn-next" onclick="goNext(17)">다음 →</button></div>
     </div>
   </section>
 
@@ -457,7 +457,7 @@
           "겨울 같은 이 시간 속에서도, 주님이 우리 아이의 이름을 부르고 계심을 믿게 하옵소서. 공부에 지쳐 눈물이 앞을 가릴 때도, 수건을 단정히 개어놓으신 부활의 주님이 함께 서 계심을 알게 하옵소서. 예수님의 이름으로 기도합니다. 아멘."
         </p>
       </div>
-      <div class="bottom-bar"><button class="btn-next" onclick="goNext(18)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(18)">← 이전</button><button class="btn-next" onclick="goNext(18)">다음 →</button></div>
     </div>
   </section>
 
@@ -487,10 +487,11 @@
           </svg>
           카카오톡으로 공유하기
         </button>
-      </div>
+      </div>`n      <div class="bottom-bar" style="background:transparent;"><button class="btn-prev" onclick="goPrev(19)">← 이전</button></div>
     </div>
   </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
