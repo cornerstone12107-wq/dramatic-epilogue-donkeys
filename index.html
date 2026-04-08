@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -15,16 +16,19 @@
 
   <!-- Kakao SDK -->
   <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
-          integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4"
-          crossorigin="anonymous"></script>
+    integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4"
+    crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- BGM -->
@@ -60,14 +64,13 @@
         <h2 class="slider-title">솔직하게 움직여봐요</h2>
         <div class="slider-wrap">
           <div class="slider-labels">
-            <span>❄️<br/>겨울 같아요</span>
-            <span>🌸<br/>봄 같아요</span>
+            <span>❄️<br />겨울 같아요</span>
+            <span>🌸<br />봄 같아요</span>
           </div>
-          <input type="range" id="state-slider" min="0" max="100" value="0"
-                 oninput="onSliderChange(this.value)" />
+          <input type="range" id="state-slider" min="0" max="100" value="0" oninput="onSliderChange(this.value)" />
         </div>
-        <p class="slider-hint">슬라이더를 움직이면 다음으로 넘어가요</p>
-      </div>`n      <div class="bottom-bar"><button class="btn-prev" onclick="goPrev(1)">← 이전</button></div>
+      </div>
+      <div class="bottom-bar"><button class="btn-prev" onclick="goPrev(1)">← 이전</button></div>
     </div>
   </section>
 
@@ -79,17 +82,18 @@
       <div class="img-card"><img src="images/1.jpeg" alt="벚꽃과 중간고사" /></div>
       <div class="text-block">
         <span class="tag spring-tag">🌸 봄 · 공감</span>
-        <h3 class="scene-h">"벚꽃이랑 중간고사,<br/>참 안 어울리죠?"</h3>
+        <h3 class="scene-h">"벚꽃이랑 중간고사,<br />참 안 어울리죠?"</h3>
         <p class="scene-p">
-          날씨는 눈부신 봄인데,<br/>
-          코앞으로 다가온 중간고사 생각하면<br/>
+          날씨는 눈부신 봄인데,<br />
+          코앞으로 다가온 중간고사 생각하면<br />
           마음은 여전히 <strong>쌀쌀한 겨울</strong>일지도 몰라요.
         </p>
         <p class="scene-p">
-          일주일을 버텨내느라<br/>진짜 고생 많았습니다. 💪
+          일주일을 버텨내느라<br />진짜 고생 많았습니다. 💪
         </p>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(2)">← 이전</button><button class="btn-next" onclick="goNext(2)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(2)">← 이전</button><button
+          class="btn-next" onclick="goNext(2)">다음 →</button></div>
     </div>
   </section>
 
@@ -101,17 +105,18 @@
       <div class="img-card"><img src="images/02.jpeg" alt="눈맞춤 미션" /></div>
       <div class="text-block">
         <span class="tag">👀 부활절 미션</span>
-        <h3 class="scene-h">"옆 사람 눈을<br/>딱 3초만 쳐다봐요"</h3>
+        <h3 class="scene-h">"옆 사람 눈을<br />딱 3초만 쳐다봐요"</h3>
         <p class="scene-p">
-          그리고 이렇게 말해주는 거예요.<br/>
+          그리고 이렇게 말해주는 거예요.<br />
           <strong>"주님의 사랑으로 사랑합니다!"</strong>
         </p>
         <div class="highlight-box">
-          부활절은 꽁꽁 얼어붙은 마음에<br/>따뜻한 볕이 들고,<br/>
+          부활절은 꽁꽁 얼어붙은 마음에<br />따뜻한 볕이 들고,<br />
           진짜 <strong>봄</strong>이 시작되는 날이에요.
         </div>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(3)">← 이전</button><button class="btn-next" onclick="goNext(3)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(3)">← 이전</button><button
+          class="btn-next" onclick="goNext(3)">다음 →</button></div>
     </div>
   </section>
 
@@ -122,18 +127,19 @@
     <div class="scene-inner scroll-scene">
       <div class="img-card"><img src="images/3.jpeg" alt="일곱 살 지훈이" /></div>
       <div class="text-block">
-        <span class="tag">💭 목사님 이야기</span>
-        <h3 class="scene-h">"일곱 살 지훈이의<br/>무모한 짝사랑"</h3>
+        <span class="tag">💭 전도사님 이야기</span>
+        <h3 class="scene-h">"일곱 살 지훈이의<br />귀여운 짝사랑"</h3>
         <p class="scene-p">
-          때는 1999년, 의정부 깡촌으로 이사 갔을 때였어요.<br/>
+          때는 1999년, 의정부 깡촌으로 이사 갔을 때였어요.<br />
           밤이면 개구리 울고 비료 냄새 진동하던 동네...
         </p>
         <p class="scene-p">
-          '푸른솔 피아노 학원' 같은 반<br/>
+          '푸른솔 피아노 학원' 같은 반<br />
           동갑내기 친구, <strong>'예은이'</strong>를 봤습니다.
         </p>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(4)">← 이전</button><button class="btn-next" onclick="goNext(4)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(4)">← 이전</button><button
+          class="btn-next" onclick="goNext(4)">다음 →</button></div>
     </div>
   </section>
 
@@ -153,18 +159,19 @@
       </div>
       <div class="text-block">
         <span class="tag">⏰ 기다림</span>
-        <h3 class="scene-h">"2시간을 버티게 한<br/>그 힘"</h3>
+        <h3 class="scene-h">"2시간을 버티게 한<br />그 힘"</h3>
         <p class="scene-p">
-          얼굴 한 번 보고 싶어서<br/>예은이네 집 앞 화단에 무작정 앉았어요.
+          얼굴 한 번 보고 싶어서<br />예은이네 집 앞 화단에 무작정 앉았어요.
         </p>
         <p class="scene-p">
-          다리에 쥐가 나서 저릿저릿한데도<br/>도무지 일어날 수가 없었죠.
+          다리에 쥐가 나서 저릿저릿한데도<br />도무지 일어날 수가 없었죠.
         </p>
         <p class="scene-p em-text">
-          '지금 가면 걔가 나올지도 몰라'<br/>— 이 생각 하나뿐이었어요.
+          '지금 가면 걔가 나올지도 몰라'<br />— 이 생각 하나뿐이었어요.
         </p>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(5)">← 이전</button><button class="btn-next" onclick="goNext(5)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(5)">← 이전</button><button
+          class="btn-next" onclick="goNext(5)">다음 →</button></div>
     </div>
   </section>
 
@@ -176,17 +183,18 @@
       <div class="img-card"><img src="images/5.jpeg" alt="소똥 냄새가 향기롭다" /></div>
       <div class="text-block">
         <span class="tag spring-tag">✨ 기적</span>
-        <h3 class="scene-h">"소똥 냄새가<br/>향기로운 기적"</h3>
+        <h3 class="scene-h">"소똥 냄새가<br />향기로운 기적"</h3>
         <p class="scene-p">
-          분명 주변엔 소똥 냄새, 비료 냄새가<br/>진동하는데...
+          분명 주변엔 소똥 냄새, 비료 냄새가<br />진동하는데...
         </p>
         <div class="highlight-box spring-highlight">
-          신기하게 그게 <strong>향기롭게</strong> 느껴졌어요.<br/><br/>
-          이유는 딱 하나.<br/>
-          그토록 보고 싶던 예은이의 얼굴을<br/>드디어 <strong>'보았기'</strong> 때문이에요.
+          신기하게 그게 <strong>향기롭게</strong> 느껴졌어요.<br /><br />
+          이유는 딱 하나.<br />
+          그토록 보고 싶던 예은이의 얼굴을<br />드디어 <strong>'보았기'</strong> 때문이에요.
         </div>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(6)">← 이전</button><button class="btn-next" onclick="goNext(6)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(6)">← 이전</button><button
+          class="btn-next" onclick="goNext(6)">다음 →</button></div>
     </div>
   </section>
 
@@ -198,20 +206,21 @@
       <div class="img-card"><img src="images/6.jpeg" alt="못봄" /></div>
       <div class="text-block dark-text">
         <span class="tag dark-tag">❄️ 겨울 이야기</span>
-        <h3 class="scene-h dark-h">"우리가 겪는 계절,<br/>'못봄'"</h3>
+        <h3 class="scene-h dark-h">"우리가 겪는 계절,<br />'못봄'"</h3>
         <p class="scene-p dark-p">
-          학교에선 다들 나를 '성적'으로만 평가하잖아요.<br/>
-          나를 있는 그대로 봐주는 눈길은 없고,<br/>
+          학교에선 다들 나를 '성적'으로만 평가하잖아요.<br />
+          나를 있는 그대로 봐주는 눈길은 없고,<br />
           미래도 보이지 않는 캄캄한 상태.
         </p>
         <div class="highlight-box dark-highlight">
-          벚꽃이 만발해도 마음이 이렇다면<br/>
-          그게 진짜 <strong>'겨울'</strong>이죠.<br/><br/>
-          따뜻한 사랑을 못 보고,<br/>나를 알아주는 눈길을 못 받는 상태.<br/>
+          벚꽃이 만발해도 마음이 이렇다면<br />
+          그게 진짜 <strong>'겨울'</strong>이죠.<br /><br />
+          따뜻한 사랑을 못 보고,<br />나를 알아주는 눈길을 못 받는 상태.<br />
           이걸 <strong>'못봄'</strong>이라고 불러요.
         </div>
       </div>
-      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(7)">← 이전</button><button class="btn-next dark-btn" onclick="goNext(7)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(7)">←
+          이전</button><button class="btn-next dark-btn" onclick="goNext(7)">다음 →</button></div>
     </div>
   </section>
 
@@ -223,20 +232,21 @@
       <div class="img-card"><img src="images/7.jpeg" alt="미아리고개" /></div>
       <div class="text-block dark-text">
         <span class="tag dark-tag">🏔 우리 동네</span>
-        <h3 class="scene-h dark-h">"미아리고개에<br/>서린 아픔"</h3>
+        <h3 class="scene-h dark-h">"미아리고개에<br />서린 아픔"</h3>
         <p class="scene-p dark-p">
-          우리가 매주 예배 드리러 오는 <strong>미아리고개</strong>.<br/>
-          '단장(斷腸)의 미아리고개'—<br/>
+          우리가 매주 예배 드리러 오는 <strong>미아리고개</strong>.<br />
+          '단장(斷腸)의 미아리고개'—<br />
           <em>창자가 끊어지는 아픔</em>이라는 뜻이에요.
         </p>
         <p class="scene-p dark-p">
-          70년 전, 가족을 잃고 철사 줄에 묶여<br/>끌려가던 비명이 서린 이 길.
+          70년 전, 가족을 잃고 철사 줄에 묶여<br />끌려가던 비명이 서린 이 길.
         </p>
         <p class="scene-p dark-p em-text">
-          그 아픔처럼 마음의 겨울을 살던<br/>한 여자가 2천 년 전 이 새벽,<br/>무덤가에 주저앉아 울고 있었어요.
+          그 아픔처럼 마음의 겨울을 살던<br />한 여자가 2천 년 전 이 새벽,<br />무덤가에 주저앉아 울고 있었어요.
         </p>
       </div>
-      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(8)">← 이전</button><button class="btn-next dark-btn" onclick="goNext(8)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(8)">←
+          이전</button><button class="btn-next dark-btn" onclick="goNext(8)">다음 →</button></div>
     </div>
   </section>
 
@@ -248,20 +258,21 @@
       <div class="img-card"><img src="images/8.jpeg" alt="막달라 마리아" /></div>
       <div class="text-block dark-text">
         <span class="tag dark-tag">👤 막달라 마리아</span>
-        <h3 class="scene-h dark-h">"일곱 귀신 들렸던<br/>여자, 마리아"</h3>
+        <h3 class="scene-h dark-h">"일곱 귀신 들렸던<br />여자, 마리아"</h3>
         <p class="scene-p dark-p">
-          사람들이 재수 없다고 침 뱉고 돌 던질 때,<br/>
-          마리아의 이름을 불러주고<br/>
+          사람들이 재수 없다고 침 뱉고 돌 던질 때,<br />
+          마리아의 이름을 불러주고<br />
           <strong>다정하게 눈을 맞춰주신 분</strong>이 예수님이었어요.
         </p>
         <div class="highlight-box dark-highlight">
-          마리아에게 예수님은<br/>
-          그냥 선생님이 아니라<br/>
-          <strong>인생의 유일한 빛</strong>이었어요.<br/><br/>
+          마리아에게 예수님은<br />
+          그냥 선생님이 아니라<br />
+          <strong>인생의 유일한 빛</strong>이었어요.<br /><br />
           그런데 그분이 돌아가신 거예요.
         </div>
       </div>
-      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(9)">← 이전</button><button class="btn-next dark-btn" onclick="goNext(9)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(9)">←
+          이전</button><button class="btn-next dark-btn" onclick="goNext(9)">다음 →</button></div>
     </div>
   </section>
 
@@ -273,19 +284,20 @@
       <div class="img-card"><img src="images/9.jpeg" alt="빈 무덤" /></div>
       <div class="text-block dark-text">
         <span class="tag dark-tag">🕯 새벽, 무덤</span>
-        <h3 class="scene-h dark-h">"마지막 끈이<br/>끊어지던 새벽"</h3>
+        <h3 class="scene-h dark-h">"마지막 끈이<br />끊어지던 새벽"</h3>
         <p class="scene-p dark-p">
-          마리아는 시신이라도 보려고<br/>새벽에 무덤으로 달려갔어요.
+          마리아는 시신이라도 보려고<br />새벽에 무덤으로 달려갔어요.
         </p>
         <p class="scene-p dark-p">
-          그런데 무덤 문이 열려 있고<br/><strong>시신마저 사라진 거예요.</strong>
+          그런데 무덤 문이 열려 있고<br /><strong>시신마저 사라진 거예요.</strong>
         </p>
         <div class="highlight-box dark-highlight">
-          "나를 사람으로 봐준 분은<br/>그분밖에 없었는데... 이제 나 어떡해..."<br/><br/>
+          "나를 사람으로 봐준 분은<br />그분밖에 없었는데... 이제 나 어떡해..."<br /><br />
           마리아는 짐승처럼 오열했어요.
         </div>
       </div>
-      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(10)">← 이전</button><button class="btn-next dark-btn" onclick="goNext(10)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(10)">←
+          이전</button><button class="btn-next dark-btn" onclick="goNext(10)">다음 →</button></div>
     </div>
   </section>
 
@@ -297,18 +309,19 @@
       <div class="img-card"><img src="images/10.jpeg" alt="개어진 수건" /></div>
       <div class="text-block">
         <span class="tag">🃏 무덤 속 기막힌 풍경</span>
-        <h3 class="scene-h">"머리에 있던 수건이<br/>따로 개어져 있었다"</h3>
+        <h3 class="scene-h">"머리에 있던 수건이<br />따로 개어져 있었다"</h3>
         <p class="scene-p">요한복음 20:7</p>
         <p class="scene-p">
-          누가 시신을 훔쳐갔다면<br/>수건을 이렇게 <strong>각 잡아서 개어놨을까요?</strong>
+          누가 시신을 훔쳐갔다면<br />수건을 이렇게 <strong>각 잡아서 개어놨을까요?</strong>
         </p>
         <div class="highlight-box">
-          부활이라는 그 장엄한 아침에<br/>
-          주님이 가장 먼저 하신 일이<br/>
+          부활이라는 그 장엄한 아침에<br />
+          주님이 가장 먼저 하신 일이<br />
           <strong>수건 정리</strong>라니요! 😮
         </div>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(11)">← 이전</button><button class="btn-next" onclick="goNext(11)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(11)">← 이전</button><button
+          class="btn-next" onclick="goNext(11)">다음 →</button></div>
     </div>
   </section>
 
@@ -320,20 +333,21 @@
       <div class="img-card"><img src="images/11.jpeg" alt="압도적인 여유" /></div>
       <div class="text-block">
         <span class="tag spring-tag">👑 끝판왕의 여유</span>
-        <h3 class="scene-h">"주님이 보여주신<br/>압도적인 여유"</h3>
+        <h3 class="scene-h">"주님이 보여주신<br />압도적인 여유"</h3>
         <p class="scene-p">
-          헉헉거리며 간신히 살아나신 게 아니에요.<br/>
-          기분 좋게 꿀잠 자고 일어난 주일 아침처럼,<br/>
+          헉헉거리며 간신히 살아나신 게 아니에요.<br />
+          기분 좋게 꿀잠 자고 일어난 주일 아침처럼,<br />
           늘 하던 대로 이부자리를 정리하듯...
         </p>
         <div class="highlight-box spring-highlight">
-          "죽음아,<br/>넌 내 앞에서<br/><strong>다 쓴 수건 한 장일 뿐이야.</strong>"
+          "죽음아,<br />넌 내 앞에서<br /><strong>다 쓴 수건 한 장일 뿐이야.</strong>"
         </div>
         <p class="scene-p">
-          주님은 이 여유 속에 계셨는데,<br/>마리아는 여전히 '못봄'의 겨울 속에 갇혀 있었어요.
+          주님은 이 여유 속에 계셨는데,<br />마리아는 여전히 '못봄'의 겨울 속에 갇혀 있었어요.
         </p>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(12)">← 이전</button><button class="btn-next" onclick="goNext(12)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(12)">← 이전</button><button
+          class="btn-next" onclick="goNext(12)">다음 →</button></div>
     </div>
   </section>
 
@@ -345,17 +359,18 @@
       <div class="img-card"><img src="images/12.jpeg" alt="마리아야!" /></div>
       <div class="text-block">
         <span class="tag spring-tag">🌸 봄이 찾아온 순간</span>
-        <h3 class="scene-h">"세상에서 가장<br/>다정한 목소리"</h3>
+        <h3 class="scene-h">"세상에서 가장<br />다정한 목소리"</h3>
         <p class="scene-p">
-          눈물 범벅인 마리아에게<br/>주님이 딱 한마디를 하세요.
+          눈물 범벅인 마리아에게<br />주님이 딱 한마디를 하세요.
         </p>
         <p class="name-call">마리아야!</p>
         <p class="scene-p">
-          7살 지훈이가 예은이의 부름에<br/>세상이 꽃향기로 변했던 것처럼,<br/>
-          마리아의 얼어붙은 시간에도<br/><strong>진짜 봄이 찾아온 거예요.</strong>
+          7살 지훈이가 예은이의 부름에<br />세상이 꽃향기로 변했던 것처럼,<br />
+          마리아의 얼어붙은 시간에도<br /><strong>진짜 봄이 찾아온 거예요.</strong>
         </p>
       </div>
-      <div class="bottom-bar spring-bar nav-buttons"><button class="btn-prev spring-btn-prev" onclick="goPrev(13)">← 이전</button><button class="btn-next spring-btn" onclick="goNext(13)">다음 →</button></div>
+      <div class="bottom-bar spring-bar nav-buttons"><button class="btn-prev spring-btn-prev" onclick="goPrev(13)">←
+          이전</button><button class="btn-next spring-btn" onclick="goNext(13)">다음 →</button></div>
     </div>
   </section>
 
@@ -367,22 +382,23 @@
       <div class="img-card"><img src="images/13.jpeg" alt="나를 부르시는 주님" /></div>
       <div class="text-block">
         <span class="tag">🕊 성령님의 속삭임</span>
-        <h3 class="scene-h">"얘들아,<br/>너희 이름도<br/>부르고 계셔"</h3>
+        <h3 class="scene-h">"얘들아,<br />너희 이름도<br />부르고 계셔"</h3>
         <p class="scene-p">
-          밤에 혼자 누워 자책할 때,<br/>
+          밤에 혼자 누워 자책할 때,<br />
           불현듯 마음 한구석에서 이런 생각이 든 적 없나요?
         </p>
         <div class="highlight-box">
-          "괜찮아, 넌 소중해.<br/>다시 해보자."
+          "괜찮아, 넌 소중해.<br />다시 해보자."
         </div>
         <p class="scene-p">
-          그건 여러분 스스로 하는 위로가 아니에요.<br/>
-          우리 안에 계신 성령님이<br/>
-          <strong>여러분 영혼에 대고 속삭여주시는</strong><br/>
+          그건 여러분 스스로 하는 위로가 아니에요.<br />
+          우리 안에 계신 성령님이<br />
+          <strong>여러분 영혼에 대고 속삭여주시는</strong><br />
           진짜 주님의 목소리예요.
         </p>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(14)">← 이전</button><button class="btn-next" onclick="goNext(14)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(14)">← 이전</button><button
+          class="btn-next" onclick="goNext(14)">다음 →</button></div>
     </div>
   </section>
 
@@ -394,23 +410,24 @@
       <div class="img-card"><img src="images/14.jpeg" alt="주님과 눈맞춤" /></div>
       <div class="text-block">
         <span class="tag spring-tag">🌸 결론</span>
-        <h3 class="scene-h">"이제 주님과<br/>눈을 맞춰봐요"</h3>
+        <h3 class="scene-h">"이제 주님과<br />눈을 맞춰봐요"</h3>
         <p class="scene-p">
-          세상은 무조건 앞만 보고 달리라고 할 거예요.<br/>
+          세상은 무조건 앞만 보고 달리라고 할 거예요.<br />
           멈추면 큰일 날 것처럼 겁을 주겠죠.
         </p>
         <p class="scene-p">
           그때 잠시 멈춰서 <strong>뒤를 돌아보세요.</strong>
         </p>
         <div class="highlight-box spring-highlight">
-          거기엔 죽음의 수건조차<br/>예쁘게 개어버리신 분,<br/>
-          <strong>여유 넘치고 다정한 예수님</strong>이<br/>
-          여러분을 바라보고 계십니다.<br/><br/>
-          그 주님과 눈이 마주치는 순간,<br/>
+          거기엔 죽음의 수건조차<br />예쁘게 개어버리신 분,<br />
+          <strong>여유 넘치고 다정한 예수님</strong>이<br />
+          여러분을 바라보고 계십니다.<br /><br />
+          그 주님과 눈이 마주치는 순간,<br />
           우리 인생의 겨울은 끝납니다. 🌸
         </div>
       </div>
-      <div class="bottom-bar spring-bar nav-buttons"><button class="btn-prev spring-btn-prev" onclick="goPrev(15)">← 이전</button><button class="btn-next spring-btn" onclick="goNext(15)">묵상하기 →</button></div>
+      <div class="bottom-bar spring-bar nav-buttons"><button class="btn-prev spring-btn-prev" onclick="goPrev(15)">←
+          이전</button><button class="btn-next spring-btn" onclick="goNext(15)">묵상하기 →</button></div>
     </div>
   </section>
 
@@ -421,10 +438,11 @@
     <div class="scene-inner scroll-scene">
       <div class="text-block center-block">
         <p class="big-emoji">🌸</p>
-        <p class="decision-main">나를 부르시는<br/>주님의 목소리를<br/>듣겠습니다.</p>
+        <p class="decision-main">나를 부르시는<br />주님의 목소리를<br />듣겠습니다.</p>
         <p class="decision-sub">주님은 지금도 내 이름을 부르고 계십니다.</p>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(16)">← 이전</button><button class="btn-next" onclick="goNext(16)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(16)">← 이전</button><button
+          class="btn-next" onclick="goNext(16)">다음 →</button></div>
     </div>
   </section>
 
@@ -435,13 +453,14 @@
     <div class="scene-inner scroll-scene">
       <div class="text-block">
         <span class="tag">👨‍👩‍👧 식탁 질문</span>
-        <h3 class="scene-h">온 가족이 함께<br/>나눠봐요</h3>
+        <h3 class="scene-h">온 가족이 함께<br />나눠봐요</h3>
         <div class="table-q">
-          "내 삶에서 '겨울'처럼 힘든 순간은 언제인가요?<br/>
+          "내 삶에서 '겨울'처럼 힘든 순간은 언제인가요?<br />
           주님이 내 이름을 부르신다면 어떤 기분일 것 같나요?"
         </div>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(17)">← 이전</button><button class="btn-next" onclick="goNext(17)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(17)">← 이전</button><button
+          class="btn-next" onclick="goNext(17)">다음 →</button></div>
     </div>
   </section>
 
@@ -454,10 +473,12 @@
         <span class="tag">🙏 부모님의 축복 기도</span>
         <h3 class="scene-h">자녀를 위한 기도</h3>
         <p class="prayer-box">
-          "겨울 같은 이 시간 속에서도, 주님이 우리 아이의 이름을 부르고 계심을 믿게 하옵소서. 공부에 지쳐 눈물이 앞을 가릴 때도, 수건을 단정히 개어놓으신 부활의 주님이 함께 서 계심을 알게 하옵소서. 예수님의 이름으로 기도합니다. 아멘."
+          "겨울 같은 이 시간 속에서도, 주님이 우리 아이의 이름을 부르고 계심을 믿게 하옵소서. 공부에 지쳐 눈물이 앞을 가릴 때도, 수건을 단정히 개어놓으신 부활의 주님이 함께 서 계심을 알게 하옵소서.
+          예수님의 이름으로 기도합니다. 아멘."
         </p>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(18)">← 이전</button><button class="btn-next" onclick="goNext(18)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(18)">← 이전</button><button
+          class="btn-next" onclick="goNext(18)">다음 →</button></div>
     </div>
   </section>
 
@@ -471,27 +492,29 @@
       <div class="ending-content">
         <p class="ending-label">📖 오늘의 말씀 — 요한복음 20:16</p>
         <p class="ending-verse">
-          "예수께서 마리아야 하시거늘<br/>
-          마리아가 돌이켜 히브리 말로<br/>
-          <em>랍오니</em> 하니<br/>
+          "예수께서 마리아야 하시거늘<br />
+          마리아가 돌이켜 히브리 말로<br />
+          <em>랍오니</em> 하니<br />
           (이는 선생님이라는 말이라)"
         </p>
         <p class="ending-tagline">
-          이번 한 주,<br/>
-          다정하게 내 이름을 부르시는<br/>그 음성 안에서<br/>
+          이번 한 주,<br />
+          다정하게 내 이름을 부르시는<br />그 음성 안에서<br />
           <strong>진짜 봄날</strong>을 살아가세요. 🌸
         </p>
         <button class="btn-kakao" onclick="shareKakao()">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 3C6.477 3 2 6.582 2 11c0 2.924 1.733 5.5 4.35 7.072L5.5 21l3.6-2.1A11.2 11.2 0 0012 19c5.523 0 10-3.582 10-8s-4.477-8-10-8z"/>
+            <path
+              d="M12 3C6.477 3 2 6.582 2 11c0 2.924 1.733 5.5 4.35 7.072L5.5 21l3.6-2.1A11.2 11.2 0 0012 19c5.523 0 10-3.582 10-8s-4.477-8-10-8z" />
           </svg>
           카카오톡으로 공유하기
         </button>
-      </div>`n      <div class="bottom-bar" style="background:transparent;"><button class="btn-prev" onclick="goPrev(19)">← 이전</button></div>
+      </div>
+      <div class="bottom-bar" style="background:transparent;"><button class="btn-prev" onclick="goPrev(19)">← 이전</button></div>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
-</html>
 
+</html>
