@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>드라마틱 에필로그 — 봄</title>
-  <meta name="description" content="나를 바라보시는 주님을 바라볼 때, 우리 삶에 겨울은 물러가고 봄이 찾아온다. 요한복음 20:11–18 설교 리와인드" />
+  <title>드라마틱 에필로그 — 왕과 사는 사람</title>
+  <meta name="description" content="세상의 비웃음 속에서도 우리를 포기하지 않으시는 왕, 하나님의 지독한 기다림. 베드로후서 3:8-14" />
 
   <!-- OG (카카오 공유용) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="드라마틱 에필로그 — 봄" />
-  <meta property="og:description" content="나를 바라보시는 주님을 바라볼 때, 우리 삶에 겨울은 물러가고 봄이 찾아온다." />
-  <meta property="og:image" content="https://cornerstone12107-wq.github.io/dramatic-epilogue-donkeys/images/1.jpeg?v=2" />
+  <meta property="og:title" content="드라마틱 에필로그 — 왕과 사는 사람" />
+  <meta property="og:description" content="세상이 비웃어도 우리를 포기하지 않으시는 왕의 지독한 기다림." />
+  <meta property="og:image" content="https://cornerstone12107-wq.github.io/dramatic-epilogue-donkeys/images/0.jpeg?v=new" />
   <meta property="og:url" content="https://cornerstone12107-wq.github.io/dramatic-epilogue-donkeys/" />
 
   <!-- Kakao SDK -->
@@ -35,139 +35,112 @@
   <audio id="bgm" src="bgm/bgm.mp3" loop></audio>
   <button id="sound-btn" aria-label="소리 켜기/끄기" onclick="toggleSound()">🔇</button>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 0 : 랜딩
-  ────────────────────────────────────────── -->
+  <!-- SCENE 0 : 표지 -->
   <section class="scene active" id="scene-0">
-    <div class="scene-inner">
-      <img src="images/1.jpeg" alt="봄" class="bg-image" />
-      <div class="overlay gradient-bottom"></div>
-      <div class="landing-content">
-        <p class="ep-label">드라마틱 에필로그</p>
-        <h1 class="main-title">봄</h1>
-        <p class="scripture">요한복음 20:11–18</p>
-        <p class="sound-hint">🎵 사운드를 켜고 감상해주세요</p>
-        <button class="btn-primary" onclick="startApp()">시작하기 →</button>
+    <div class="scene-inner scroll-scene dark-bg">
+      <div class="img-card"><img src="images/0.jpeg?v=new" alt="표지" /></div>
+      <div class="text-block dark-text" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:45vh; padding-top:2rem;">
+        <p class="ep-label" style="color:#D4AF37; margin-bottom:1rem; font-weight:600; letter-spacing:2px; font-size:0.9rem;">드라마틱 에필로그</p>
+        <h1 class="main-title" style="font-size:2.8rem; margin-bottom:1rem; color:#fff;">왕과 사는 사람</h1>
+        <p class="scripture" style="color:#c0c0c0; margin-bottom:2rem; font-size:1.1rem;">베드로후서 3:8–14</p>
+        <p class="sound-hint" style="color:#888; font-size:0.85rem; margin-bottom:1.5rem;">🎵 사운드를 켜고 감상해주세요</p>
+        <button class="btn-primary" onclick="startApp()" style="background:#D4AF37; color:#000; box-shadow: 0 4px 15px rgba(212,175,55,0.4); padding:16px 45px; border-radius:30px; border:none; font-weight:700; font-size:1.1rem;">시작하기 →</button>
       </div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 1 : 상태 슬라이더
-  ────────────────────────────────────────── -->
+  <!-- SCENE 1 : 원래 Scene 4 (고립된 섬, 단종의 청령포) -->
   <section class="scene" id="scene-1">
-    <div class="scene-inner">
-      <img src="images/02.jpeg" alt="상태 체크" class="bg-image dim" />
-      <div class="overlay gradient-bottom dark-overlay"></div>
-      <div class="slider-content">
-        <p class="label">지금 나의 계절은?</p>
-        <h2 class="slider-title">솔직하게 움직여봐요</h2>
-        <div class="slider-wrap">
-          <div class="slider-labels">
-            <span>❄️<br />겨울 같아요</span>
-            <span>🌸<br />봄 같아요</span>
-          </div>
-          <input type="range" id="state-slider" min="0" max="100" value="0" oninput="onSliderChange(this.value)" />
-        </div>
+    <div class="scene-inner scroll-scene dark-bg">
+      <div class="img-card"><img src="images/1.jpeg?v=new" alt="영월 청령포" /></div>
+      <div class="text-block dark-text">
+        <span class="tag dark-tag">⛰ 유배지</span>
+        <h3 class="scene-h dark-h">"고립된 섬,<br />단종의 청령포"</h3>
+        <p class="scene-p dark-p">
+          어린 왕 단종이 유배되었던 완벽한 고립지 청령포.<br />
+          그저 캄캄하고 외로운 곳이었지만,<br />
+          최근 영화의 인기 덕분에 사람들의 발길이 이어지고 있죠.
+        </p>
       </div>
-      <div class="bottom-bar"><button class="btn-prev" onclick="goPrev(1)">← 이전</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(1)">← 이전</button><button
+          class="btn-next dark-btn" onclick="goNext(1)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 2 : 설교 1 — 벚꽃이랑 중간고사
-  ────────────────────────────────────────── -->
+  <!-- SCENE 2 : 원래 Scene 5 (단종 영화 / 우리 앞의 왕) -->
   <section class="scene" id="scene-2">
-    <div class="scene-inner scroll-scene">
-      <div class="img-card"><img src="images/1.jpeg" alt="벚꽃과 중간고사" /></div>
-      <div class="text-block">
-        <span class="tag spring-tag">🌸 봄 · 공감</span>
-        <h3 class="scene-h">"벚꽃이랑 중간고사,<br />참 안 어울리죠?"</h3>
-        <p class="scene-p">
-          날씨는 눈부신 봄인데,<br />
-          코앞으로 다가온 중간고사 생각하면<br />
-          마음은 여전히 <strong>쌀쌀한 겨울</strong>일지도 몰라요.
+    <div class="scene-inner scroll-scene dark-bg">
+      <div class="img-card"><img src="images/2.jpeg?v=new" alt="우리 앞의 왕" /></div>
+      <div class="text-block dark-text" style="color:#d9d9d9;">
+        <span class="tag dark-tag">👑 왕과 사는 사람</span>
+        <h3 class="scene-h dark-h">"우리도 왕을<br />모시고 사는데..."</h3>
+        <p class="scene-p dark-p">
+          우리도 세상 권력이 아닌 위대한 왕, 예수님을 모시고 삽니다.<br />
+          그런데 솔직히 좀 답답하죠.
         </p>
-        <p class="scene-p">
-          일주일을 버텨내느라<br />진짜 고생 많았습니다. 💪
-        </p>
-      </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(2)">← 이전</button><button
-          class="btn-next" onclick="goNext(2)">다음 →</button></div>
-    </div>
-  </section>
-
-  <!-- ──────────────────────────────────────────
-       SCENE 3 : 설교 2 — 3초 눈맞춤
-  ────────────────────────────────────────── -->
-  <section class="scene" id="scene-3">
-    <div class="scene-inner scroll-scene">
-      <div class="img-card"><img src="images/02.jpeg" alt="눈맞춤 미션" /></div>
-      <div class="text-block">
-        <span class="tag">👀 부활절 미션</span>
-        <h3 class="scene-h">"옆 사람 눈을<br />딱 3초만 쳐다봐요"</h3>
-        <p class="scene-p">
-          그리고 이렇게 말해주는 거예요.<br />
-          <strong>"주님의 사랑으로 사랑합니다!"</strong>
-        </p>
-        <div class="highlight-box">
-          부활절은 꽁꽁 얼어붙은 마음에<br />따뜻한 볕이 들고,<br />
-          진짜 <strong>봄</strong>이 시작되는 날이에요.
+        <div class="highlight-box dark-highlight">
+          다시 오신다더니... <br />
+          <strong>무려 2,000년째</strong> 소식이 없습니다.
         </div>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(3)">← 이전</button><button
-          class="btn-next" onclick="goNext(3)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(2)">← 이전</button><button
+          class="btn-next dark-btn" onclick="goNext(2)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 4 : 설교 3 — 일곱 살 지훈이
-  ────────────────────────────────────────── -->
-  <section class="scene" id="scene-4">
-    <div class="scene-inner scroll-scene">
-      <div class="img-card"><img src="images/3.jpeg" alt="일곱 살 지훈이" /></div>
-      <div class="text-block">
-        <span class="tag">💭 전도사님 이야기</span>
-        <h3 class="scene-h">"일곱 살 지훈이의<br />귀여운 짝사랑"</h3>
-        <p class="scene-p">
-          때는 1999년, 의정부 깡촌으로 이사 갔을 때였어요.<br />
-          밤이면 개구리 울고 비료 냄새 진동하던 동네...
-        </p>
-        <p class="scene-p">
-          '푸른솔 피아노 학원' 같은 반<br />
-          동갑내기 친구, <strong>'예은이'</strong>를 봤습니다.
+  <!-- SCENE 3 : 원래 Scene 6 (마메르틴 감옥) -->
+  <section class="scene" id="scene-3">
+    <div class="scene-inner scroll-scene dark-bg">
+      <div class="img-card"><img src="images/3.jpeg?v=new" alt="마메르틴 감옥" /></div>
+      <div class="text-block dark-text">
+        <span class="tag dark-tag" style="background:rgba(200,50,50,0.2); color:#ff6666;">⛓ 로마 지하 감옥</span>
+        <h3 class="scene-h dark-h">"2,000년 전,<br />오물 냄새 진동하던 곳"</h3>
+        <p class="scene-p dark-p">
+          늙고 지친 베드로는 로마의 악명 높은 지하 감옥<br />
+          '마메르틴' 사형 대기소에 갇혀 있었습니다.<br />
+          십자가에 거꾸로 매달려 죽을 날만 직감하면서요.
         </p>
       </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(4)">← 이전</button><button
-          class="btn-next" onclick="goNext(4)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(3)">← 이전</button><button
+          class="btn-next dark-btn" onclick="goNext(3)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 5 : 설교 4 — 2시간을 버티게 한 힘 (이미지 2개)
-  ────────────────────────────────────────── -->
+  <!-- SCENE 4 : 원래 Scene 7 (세상의 조롱) -->
+  <section class="scene" id="scene-4">
+    <div class="scene-inner scroll-scene dark-bg">
+      <div class="img-card"><img src="images/4.jpeg?v=new" alt="조롱하는 세상" /></div>
+      <div class="text-block dark-text">
+        <span class="tag dark-tag">🗣 세상의 조롱</span>
+        <h3 class="scene-h dark-h">"어찌 된 거요?<br />변한 건 없잖아!"</h3>
+        <p class="scene-p dark-p">
+          감옥 밖 세상만 조롱한 게 아닙니다.<br />
+          "네가 모시는 구원자? 헛된 기다림 집어치워.<br />
+          강한 자가 약한 자 밟고 올라서는 게 진리야!"
+        </p>
+        <p class="scene-p dark-p em-text" style="color:#ff8080;">
+          오늘날 치열한 교실에서 우리가 듣는 폭력적인 조롱과 똑같습니다.
+        </p>
+      </div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(4)">← 이전</button><button
+          class="btn-next dark-btn" onclick="goNext(4)">다음 →</button></div>
+    </div>
+  </section>
+
+  <!-- SCENE 5 : 원래 Scene 8 (시간의 비밀 / 베드로후서) -->
   <section class="scene" id="scene-5">
     <div class="scene-inner scroll-scene">
-      <!-- 이미지 2개 나란히 -->
-      <div class="img-dual">
-        <div class="img-dual-item">
-          <img src="images/4.jpeg" alt="화단에 앉아 기다리는 지훈이" />
-        </div>
-        <div class="img-dual-item">
-          <img src="images/4-1.jpeg" alt="현관문이 열리는 순간" />
-        </div>
-      </div>
+      <div class="img-card"><img src="images/5.jpeg?v=new" alt="베드로의 답" /></div>
       <div class="text-block">
-        <span class="tag">⏰ 기다림</span>
-        <h3 class="scene-h">"2시간을 버티게 한<br />그 힘"</h3>
+        <span class="tag">🕰 시간의 비밀</span>
+        <h3 class="scene-h">"그분에게는 단 하루가<br />천 년 같습니다"</h3>
         <p class="scene-p">
-          얼굴 한 번 보고 싶어서<br />예은이네 집 앞 화단에 무작정 앉았어요.
+          하지만 베드로는 절망의 감옥 바닥에서 이렇게 적습니다.<br />
+          "하나님께는 하루가 천 년 같고 천 년이 하루 같습니다."
         </p>
         <p class="scene-p">
-          다리에 쥐가 나서 저릿저릿한데도<br />도무지 일어날 수가 없었죠.
-        </p>
-        <p class="scene-p em-text">
-          '지금 가면 걔가 나올지도 몰라'<br />— 이 생각 하나뿐이었어요.
+          우리의 왕은 의미 없이 흘러가는 '크로노스'에 갇히지 않고,<br />
+          목적으로 꽉 찬 <strong>'카이로스'</strong>의 시간을 사시는 분입니다.
         </p>
       </div>
       <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(5)">← 이전</button><button
@@ -175,175 +148,136 @@
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 6 : 설교 5 — 소똥 냄새가 향기로운 기적
-  ────────────────────────────────────────── -->
+  <!-- SCENE 6 : 원래 Scene 9 (타노스와 전지전능) -->
   <section class="scene" id="scene-6">
     <div class="scene-inner scroll-scene">
-      <div class="img-card"><img src="images/5.jpeg" alt="소똥 냄새가 향기롭다" /></div>
+      <div class="img-card"><img src="images/6.jpeg?v=new" alt="진짜 전능함" /></div>
       <div class="text-block">
-        <span class="tag spring-tag">✨ 기적</span>
-        <h3 class="scene-h">"소똥 냄새가<br />향기로운 기적"</h3>
+        <span class="tag" style="background:rgba(212,175,55,0.2); color:#b58900;">💪 진짜 전지전능함</span>
+        <h3 class="scene-h">"나쁜 놈들을 부수는 게<br />전능함일까요?"</h3>
         <p class="scene-p">
-          분명 주변엔 소똥 냄새, 비료 냄새가<br />진동하는데...
+          타노스처럼 손가락 튕겨서 적들을 한 번에 리셋하는 것.<br />
+          세상 모든 문제를 마법처럼 부숴버리는 것.<br />
+          그게 전지전능함일까요? 
         </p>
-        <div class="highlight-box spring-highlight">
-          신기하게 그게 <strong>향기롭게</strong> 느껴졌어요.<br /><br />
-          이유는 딱 하나.<br />
-          그토록 보고 싶던 예은이의 얼굴을<br />드디어 <strong>'보았기'</strong> 때문이에요.
-        </div>
       </div>
       <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(6)">← 이전</button><button
           class="btn-next" onclick="goNext(6)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 7 : 설교 6 — '못봄'
-  ────────────────────────────────────────── -->
+  <!-- SCENE 7 : 원래 Scene 10 (다큐멘터리) -->
   <section class="scene" id="scene-7">
     <div class="scene-inner scroll-scene dark-bg">
-      <div class="img-card"><img src="images/6.jpeg" alt="못봄" /></div>
-      <div class="text-block dark-text">
-        <span class="tag dark-tag">❄️ 겨울 이야기</span>
-        <h3 class="scene-h dark-h">"우리가 겪는 계절,<br />'못봄'"</h3>
+      <div class="img-card"><img src="images/7.jpeg?v=new" alt="너는 내 운명" /></div>
+      <div class="text-block dark-text" style="color:#d9d9d9;">
+        <span class="tag dark-tag">🎬 다큐멘터리: 너는 내 운명</span>
+        <h3 class="scene-h dark-h">"온몸으로 지독하게<br />앓아낸 사람"</h3>
         <p class="scene-p dark-p">
-          학교에선 다들 나를 '성적'으로만 평가하잖아요.<br />
-          나를 있는 그대로 봐주는 눈길은 없고,<br />
-          미래도 보이지 않는 캄캄한 상태.
+          시한부 아내를 도망치지 않고 병실에서 돌본 한 남편의 기록.
         </p>
         <div class="highlight-box dark-highlight">
-          벚꽃이 만발해도 마음이 이렇다면<br />
-          그게 진짜 <strong>'겨울'</strong>이죠.<br /><br />
-          따뜻한 사랑을 못 보고,<br />나를 알아주는 눈길을 못 받는 상태.<br />
-          이걸 <strong>'못봄'</strong>이라고 불러요.
+          그 시간은 단순히 멍하니 '기다린' 것이 아니라,<br />
+          사랑하는 이의 끔찍한 통증을 자기 삶을 깎아가며<br />
+          기꺼이 <strong>함께 앓아내고 버틴 시간</strong>이었습니다.
         </div>
       </div>
-      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(7)">←
-          이전</button><button class="btn-next dark-btn" onclick="goNext(7)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(7)">← 이전</button><button
+          class="btn-next dark-btn" onclick="goNext(7)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 8 : 설교 7 — 미아리고개
-  ────────────────────────────────────────── -->
+  <!-- SCENE 8 : 원래 Scene 11 (지독한 기다림) -->
   <section class="scene" id="scene-8">
     <div class="scene-inner scroll-scene dark-bg">
-      <div class="img-card"><img src="images/7.jpeg" alt="미아리고개" /></div>
+      <div class="img-card"><img src="images/8.jpeg?v=new" alt="기다림" /></div>
       <div class="text-block dark-text">
-        <span class="tag dark-tag">🏔 우리 동네</span>
-        <h3 class="scene-h dark-h">"미아리고개에<br />서린 아픔"</h3>
+        <span class="tag dark-tag" style="background:rgba(200,50,50,0.2); color:#ff6666;">❤️ 가장 위대한 사랑</span>
+        <h3 class="scene-h dark-h">"아무도 잃고<br />싶지 않으셔서"</h3>
         <p class="scene-p dark-p">
-          우리가 매주 예배 드리러 오는 <strong>미아리고개</strong>.<br />
-          '단장(斷腸)의 미아리고개'—<br />
-          <em>창자가 끊어지는 아픔</em>이라는 뜻이에요.
+          내가 제멋대로 굴어도,<br />
+          세상이 비웃고 조롱해도,<br />
+          여러분을 잃고 싶지 않아서 끝까지 다 참아내고 버티는 능력.
         </p>
-        <p class="scene-p dark-p">
-          70년 전, 가족을 잃고 철사 줄에 묶여<br />끌려가던 비명이 서린 이 길.
-        </p>
-        <p class="scene-p dark-p em-text">
-          그 아픔처럼 마음의 겨울을 살던<br />한 여자가 2천 년 전 이 새벽,<br />무덤가에 주저앉아 울고 있었어요.
+        <p class="scene-p dark-p em-text" style="color:#ff8080;">
+          그 지독한 '기다림'이 바로 하나님의 진짜 전능함입니다.
         </p>
       </div>
-      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(8)">←
-          이전</button><button class="btn-next dark-btn" onclick="goNext(8)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(8)">← 이전</button><button
+          class="btn-next dark-btn" onclick="goNext(8)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 9 : 설교 8 — 막달라 마리아
-  ────────────────────────────────────────── -->
+  <!-- SCENE 9 : 원래 Scene 12 (십자가) -->
   <section class="scene" id="scene-9">
     <div class="scene-inner scroll-scene dark-bg">
-      <div class="img-card"><img src="images/8.jpeg" alt="막달라 마리아" /></div>
+      <div class="img-card"><img src="images/9.jpeg?v=new" alt="십자가" /></div>
       <div class="text-block dark-text">
-        <span class="tag dark-tag">👤 막달라 마리아</span>
-        <h3 class="scene-h dark-h">"일곱 귀신 들렸던<br />여자, 마리아"</h3>
+        <span class="tag dark-tag">✝️ 십자가, 왕의 강림</span>
+        <h3 class="scene-h dark-h">"중환자실로 뛰어든<br />우리의 왕"</h3>
         <p class="scene-p dark-p">
-          사람들이 재수 없다고 침 뱉고 돌 던질 때,<br />
-          마리아의 이름을 불러주고<br />
-          <strong>다정하게 눈을 맞춰주신 분</strong>이 예수님이었어요.
+          하나님은 저 멀리 숨어 구경만 하신 게 아닙니다.<br />
+          우리가 죽어갈 때, 당신이 먼저 이 세상이라는 중환자실로 내려와<br />
+          십자가의 대못이 박히는 고통을 함께 앓아내셨습니다.
         </p>
-        <div class="highlight-box dark-highlight">
-          마리아에게 예수님은<br />
-          그냥 선생님이 아니라<br />
-          <strong>인생의 유일한 빛</strong>이었어요.<br /><br />
-          그런데 그분이 돌아가신 거예요.
-        </div>
       </div>
-      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(9)">←
-          이전</button><button class="btn-next dark-btn" onclick="goNext(9)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(9)">← 이전</button><button
+          class="btn-next dark-btn" onclick="goNext(9)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 10 : 설교 9 — 마지막 끈이 끊어지던 새벽
-  ────────────────────────────────────────── -->
+  <!-- SCENE 10 : 원래 Scene 13 (용광로 불) -->
   <section class="scene" id="scene-10">
-    <div class="scene-inner scroll-scene dark-bg">
-      <div class="img-card"><img src="images/9.jpeg" alt="빈 무덤" /></div>
-      <div class="text-block dark-text">
-        <span class="tag dark-tag">🕯 새벽, 무덤</span>
-        <h3 class="scene-h dark-h">"마지막 끈이<br />끊어지던 새벽"</h3>
-        <p class="scene-p dark-p">
-          마리아는 시신이라도 보려고<br />새벽에 무덤으로 달려갔어요.
+    <div class="scene-inner scroll-scene">
+      <div class="img-card"><img src="images/10.jpeg?v=new" alt="용광로" /></div>
+      <div class="text-block">
+        <span class="tag" style="background:rgba(215,90,0,0.15); color:#d75a00;">🔥 정화의 불</span>
+        <h3 class="scene-h">"마지막 날 결말:<br />지구가 잿더미가 된다?"</h3>
+        <p class="scene-p">
+          이 지독한 기다림의 결말이 세상을 불태우는 끔찍한 파괴일까요?<br />
+          아닙니다! 오해하지 마세요.
         </p>
-        <p class="scene-p dark-p">
-          그런데 무덤 문이 열려 있고<br /><strong>시신마저 사라진 거예요.</strong>
-        </p>
-        <div class="highlight-box dark-highlight">
-          "나를 사람으로 봐준 분은<br />그분밖에 없었는데... 이제 나 어떡해..."<br /><br />
-          마리아는 짐승처럼 오열했어요.
+        <div class="highlight-box" style="border-color:#d75a00;">
+          그 불은 거짓된 찌꺼기만 싹 다 살라버리는<br />
+          1,300도 장인의 <strong>'용광로 불'</strong>일 뿐입니다.
         </div>
       </div>
-      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(10)">←
-          이전</button><button class="btn-next dark-btn" onclick="goNext(10)">다음 →</button></div>
+      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(10)">← 이전</button><button
+          class="btn-next" onclick="goNext(10)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 11 : 설교 10 — 수건
-  ────────────────────────────────────────── -->
+  <!-- SCENE 11 : 원래 Scene 14 (새 하늘과 새 땅) -->
   <section class="scene" id="scene-11">
     <div class="scene-inner scroll-scene">
-      <div class="img-card"><img src="images/10.jpeg" alt="개어진 수건" /></div>
+      <div class="img-card"><img src="images/11.jpeg?v=new" alt="새 하늘과 새 땅" /></div>
       <div class="text-block">
-        <span class="tag">🃏 무덤 속 기막힌 풍경</span>
-        <h3 class="scene-h">"머리에 있던 수건이<br />따로 개어져 있었다"</h3>
-        <p class="scene-p">요한복음 20:7</p>
+        <span class="tag" style="background:rgba(212,175,55,0.2); color:#b58900;">🌅 새 하늘과 새 땅</span>
+        <h3 class="scene-h">"오직 불의가 불타고<br />정의만이 숨 쉬는 곳"</h3>
         <p class="scene-p">
-          누가 시신을 훔쳐갔다면<br />수건을 이렇게 <strong>각 잡아서 개어놨을까요?</strong>
+          세상의 모든 억울한 눈물과 불의가 용광로에 다 타버린 그곳.<br />
+          오직 정의가 평화롭게 깃들어 있는 깨끗한 나라가<br />
+          우리에게 가장 찬란한 '선물'로 주어질 겁니다!
         </p>
-        <div class="highlight-box">
-          부활이라는 그 장엄한 아침에<br />
-          주님이 가장 먼저 하신 일이<br />
-          <strong>수건 정리</strong>라니요! 😮
-        </div>
       </div>
       <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(11)">← 이전</button><button
           class="btn-next" onclick="goNext(11)">다음 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 12 : 설교 11 — 압도적인 여유
-  ────────────────────────────────────────── -->
+  <!-- SCENE 12 : 원래 Scene 15 (그릇) -->
   <section class="scene" id="scene-12">
     <div class="scene-inner scroll-scene">
-      <div class="img-card"><img src="images/11.jpeg" alt="압도적인 여유" /></div>
+      <div class="img-card"><img src="images/12.jpeg?v=new" alt="단단한 그릇" /></div>
       <div class="text-block">
-        <span class="tag spring-tag">👑 끝판왕의 여유</span>
-        <h3 class="scene-h">"주님이 보여주신<br />압도적인 여유"</h3>
+        <span class="tag" style="background:rgba(212,175,55,0.2); color:#b58900;">👑 결단</span>
+        <h3 class="scene-h">"십자가 용광로에서<br />구워진 진짜 그릇"</h3>
         <p class="scene-p">
-          헉헉거리며 간신히 살아나신 게 아니에요.<br />
-          기분 좋게 꿀잠 자고 일어난 주일 아침처럼,<br />
-          늘 하던 대로 이부자리를 정리하듯...
+          십자가의 그 뜨거운 용광로, 하나님의 지독한 기다림으로 빚어진 우리는<br />
+          세상의 비웃음이라는 조그만 '전자레인지' 속에서<br />결코 타거나 깨지지 않습니다.
         </p>
-        <div class="highlight-box spring-highlight">
-          "죽음아,<br />넌 내 앞에서<br /><strong>다 쓴 수건 한 장일 뿐이야.</strong>"
-        </div>
-        <p class="scene-p">
-          주님은 이 여유 속에 계셨는데,<br />마리아는 여전히 '못봄'의 겨울 속에 갇혀 있었어요.
+        <p class="scene-p em-text" style="color:#a87a00;">
+          세상에 휩쓸리지 말고, 왕이신 하나님과 함께 당당하게 사는 여러분이 되길 축복합니다.
         </p>
       </div>
       <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(12)">← 이전</button><button
@@ -351,174 +285,59 @@
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 13 : 설교 12 — "마리아야!"
-  ────────────────────────────────────────── -->
+  <!-- SCENE 13 : 원래 Scene 16 (식탁 기도) - 사용자 폴더의 13.jpeg 존재 가능 -->
   <section class="scene" id="scene-13">
-    <div class="scene-inner scroll-scene spring-bg">
-      <div class="img-card"><img src="images/12.jpeg" alt="마리아야!" /></div>
-      <div class="text-block">
-        <span class="tag spring-tag">🌸 봄이 찾아온 순간</span>
-        <h3 class="scene-h">"세상에서 가장<br />다정한 목소리"</h3>
-        <p class="scene-p">
-          눈물 범벅인 마리아에게<br />주님이 딱 한마디를 하세요.
-        </p>
-        <p class="name-call">마리아야!</p>
-        <p class="scene-p">
-          7살 지훈이가 예은이의 부름에<br />세상이 꽃향기로 변했던 것처럼,<br />
-          마리아의 얼어붙은 시간에도<br /><strong>진짜 봄이 찾아온 거예요.</strong>
-        </p>
+    <div class="scene-inner scroll-scene dark-bg">
+      <div class="text-block dark-text" style="margin-top:20px;">
+        <h3 class="scene-h dark-h text-center" style="margin-bottom:1.5rem;color:#D4AF37;">🍽 식탁에서 나누기</h3>
+        <div class="qa-box" style="background:#1f1f1f;border:1px solid rgba(212,175,55,0.5);padding:1.5rem;border-radius:16px;margin-bottom:1.5rem;">
+          <p class="scene-p dark-p" style="margin-bottom:0.8rem;font-weight:700;font-size:1.1rem;color:#D4AF37;">
+            💬 이번 주 가족 식탁 질문
+          </p>
+          <p class="scene-p dark-p" style="font-size:0.95rem;line-height:1.7;color:#e0e0e0;">
+            "내가 세상이나 친구들 앞에서 초라하게 느껴졌을 때, 혹은 마음이 조급해졌을 때 언제였나요?<br/> 나를 포기하지 않고 지독하게 기다려주신 하나님의 십자가 사랑을 떠올리며 서로의 마음을 격려해 보아요."
+          </p>
+        </div>
+        <div class="qa-box" style="background:#1f1f1f;border:1px solid rgba(212,175,55,0.5);padding:1.5rem;border-radius:16px;">
+          <p class="scene-p dark-p" style="margin-bottom:0.8rem;font-weight:700;font-size:1.1rem;color:#D4AF37;">
+            🙏 부모님의 축복 기도
+          </p>
+          <p class="scene-p dark-p" style="font-size:0.95rem;line-height:1.7;color:#e0e0e0;">
+            "사랑하는 하나님, 성적과 세상 사람들의 평가 속에서 우리 아이가 주눅 들지 않게 하옵소서.<br/> 예수님의 그 뜨거운 용광로 사랑으로 굳게 서게 하시고, 세상의 비웃음 속에서도 당당하게 나아가는 왕의 자녀로 살아가게 하옵소서. 아멘."
+          </p>
+        </div>
       </div>
-      <div class="bottom-bar spring-bar nav-buttons"><button class="btn-prev spring-btn-prev" onclick="goPrev(13)">←
-          이전</button><button class="btn-next spring-btn" onclick="goNext(13)">다음 →</button></div>
+      <div class="bottom-bar dark-bar nav-buttons"><button class="btn-prev dark-btn-prev" onclick="goPrev(13)">← 이전</button><button
+          class="btn-next dark-btn" onclick="goNext(13)">종료 →</button></div>
     </div>
   </section>
 
-  <!-- ──────────────────────────────────────────
-       SCENE 14 : 설교 13 — 너희 이름도 부르고 계셔
-  ────────────────────────────────────────── -->
+  <!-- SCENE 14 : 원래 Scene 17 (Ending) -->
   <section class="scene" id="scene-14">
-    <div class="scene-inner scroll-scene">
-      <div class="img-card"><img src="images/13.jpeg" alt="나를 부르시는 주님" /></div>
-      <div class="text-block">
-        <span class="tag">🕊 성령님의 속삭임</span>
-        <h3 class="scene-h">"얘들아,<br />너희 이름도<br />부르고 계셔"</h3>
-        <p class="scene-p">
-          밤에 혼자 누워 자책할 때,<br />
-          불현듯 마음 한구석에서 이런 생각이 든 적 없나요?
+    <div class="scene-inner scroll-scene dark-bg">
+      <div class="img-card"><img src="images/ending.jpeg?v=new" alt="엔딩" /></div>
+      <div class="text-block dark-text" style="text-align:center; display:flex; flex-direction:column; justify-content:center; align-items:center; padding-top:2rem;">
+        <h2 class="slider-title" style="color:#D4AF37; font-size:2.2rem; margin-bottom:1.5rem; font-family:'Noto Serif KR', serif;">왕과 사는 사람</h2>
+        <p class="scene-p text-white" style="font-size:1.1rem; line-height:1.7; margin-bottom:2.5rem; color:#d9d9d9; word-break:keep-all;">
+          십자가 용광로에 구워진 그릇은<br />세상의 전자레인지에서 결코 깨지지 않습니다.<br /><br />
+          나를 위해 오래 참고 버티시는<br />위대한 <strong style="color:#D4AF37;">왕</strong>과 함께 하세요. 👑
         </p>
-        <div class="highlight-box">
-          "괜찮아, 넌 소중해.<br />다시 해보자."
-        </div>
-        <p class="scene-p">
-          그건 여러분 스스로 하는 위로가 아니에요.<br />
-          우리 안에 계신 성령님이<br />
-          <strong>여러분 영혼에 대고 속삭여주시는</strong><br />
-          진짜 주님의 목소리예요.
-        </p>
-      </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(14)">← 이전</button><button
-          class="btn-next" onclick="goNext(14)">다음 →</button></div>
-    </div>
-  </section>
-
-  <!-- ──────────────────────────────────────────
-       SCENE 15 : 설교 14 — 주님과 눈을 맞춰봐요
-  ────────────────────────────────────────── -->
-  <section class="scene" id="scene-15">
-    <div class="scene-inner scroll-scene spring-bg">
-      <div class="img-card"><img src="images/14.jpeg" alt="주님과 눈맞춤" /></div>
-      <div class="text-block">
-        <span class="tag spring-tag">🌸 결론</span>
-        <h3 class="scene-h">"이제 주님과<br />눈을 맞춰봐요"</h3>
-        <p class="scene-p">
-          세상은 무조건 앞만 보고 달리라고 할 거예요.<br />
-          멈추면 큰일 날 것처럼 겁을 주겠죠.
-        </p>
-        <p class="scene-p">
-          그때 잠시 멈춰서 <strong>뒤를 돌아보세요.</strong>
-        </p>
-        <div class="highlight-box spring-highlight">
-          거기엔 죽음의 수건조차<br />예쁘게 개어버리신 분,<br />
-          <strong>여유 넘치고 다정한 예수님</strong>이<br />
-          여러분을 바라보고 계십니다.<br /><br />
-          그 주님과 눈이 마주치는 순간,<br />
-          우리 인생의 겨울은 끝납니다. 🌸
-        </div>
-      </div>
-      <div class="bottom-bar spring-bar nav-buttons"><button class="btn-prev spring-btn-prev" onclick="goPrev(15)">←
-          이전</button><button class="btn-next spring-btn" onclick="goNext(15)">묵상하기 →</button></div>
-    </div>
-  </section>
-
-  <!-- ──────────────────────────────────────────
-       SCENE 16 : 결단
-  ────────────────────────────────────────── -->
-  <section class="scene" id="scene-16">
-    <div class="scene-inner scroll-scene">
-      <div class="text-block center-block">
-        <p class="big-emoji">🌸</p>
-        <p class="decision-main">나를 부르시는<br />주님의 목소리를<br />듣겠습니다.</p>
-        <p class="decision-sub">주님은 지금도 내 이름을 부르고 계십니다.</p>
-      </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(16)">← 이전</button><button
-          class="btn-next" onclick="goNext(16)">다음 →</button></div>
-    </div>
-  </section>
-
-  <!-- ──────────────────────────────────────────
-       SCENE 17 : 식탁 질문
-  ────────────────────────────────────────── -->
-  <section class="scene" id="scene-17">
-    <div class="scene-inner scroll-scene">
-      <div class="text-block">
-        <span class="tag">👨‍👩‍👧 식탁 질문</span>
-        <h3 class="scene-h">온 가족이 함께<br />나눠봐요</h3>
-        <div class="table-q">
-          "내 삶에서 '겨울'처럼 힘든 순간은 언제인가요?<br />
-          주님이 내 이름을 부르신다면 어떤 기분일 것 같나요?"
-        </div>
-      </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(17)">← 이전</button><button
-          class="btn-next" onclick="goNext(17)">다음 →</button></div>
-    </div>
-  </section>
-
-  <!-- ──────────────────────────────────────────
-       SCENE 18 : 부모님 축복 기도
-  ────────────────────────────────────────── -->
-  <section class="scene" id="scene-18">
-    <div class="scene-inner scroll-scene">
-      <div class="text-block">
-        <span class="tag">🙏 부모님의 축복 기도</span>
-        <h3 class="scene-h">자녀를 위한 기도</h3>
-        <p class="prayer-box">
-          "겨울 같은 이 시간 속에서도, 주님이 우리 아이의 이름을 부르고 계심을 믿게 하옵소서. 공부에 지쳐 눈물이 앞을 가릴 때도, 수건을 단정히 개어놓으신 부활의 주님이 함께 서 계심을 알게 하옵소서.
-          예수님의 이름으로 기도합니다. 아멘."
-        </p>
-      </div>
-      <div class="bottom-bar nav-buttons"><button class="btn-prev" onclick="goPrev(18)">← 이전</button><button
-          class="btn-next" onclick="goNext(18)">다음 →</button></div>
-    </div>
-  </section>
-
-  <!-- ──────────────────────────────────────────
-       SCENE 19 : 마무리 말씀 + 카카오 공유
-  ────────────────────────────────────────── -->
-  <section class="scene" id="scene-19">
-    <div class="scene-inner spring-bg">
-      <img src="images/ending.jpeg" alt="마무리" class="bg-image ending-bg" />
-      <div class="overlay gradient-top-bottom spring-overlay"></div>
-      <div class="ending-content">
-        <p class="ending-label">📖 오늘의 말씀 — 요한복음 20:16</p>
-        <p class="ending-verse">
-          "예수께서 마리아야 하시거늘<br />
-          마리아가 돌이켜 히브리 말로<br />
-          <em>랍오니</em> 하니<br />
-          (이는 선생님이라는 말이라)"
-        </p>
-        <p class="ending-tagline">
-          이번 한 주,<br />
-          다정하게 내 이름을 부르시는<br />그 음성 안에서<br />
-          <strong>진짜 봄날</strong>을 살아가세요. 🌸
-        </p>
-        <button class="btn-kakao" onclick="shareKakao()">
+        <button class="btn-kakao" onclick="shareKakao()" style="background:#FEE500; color:#000; padding:14px 26px; border-radius:30px; font-weight:700; border:none; display:flex; align-items:center; margin:0 auto; gap:8px;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 3C6.477 3 2 6.582 2 11c0 2.924 1.733 5.5 4.35 7.072L5.5 21l3.6-2.1A11.2 11.2 0 0012 19c5.523 0 10-3.582 10-8s-4.477-8-10-8z" />
+            <path d="M12 3C6.477 3 2 6.582 2 11c0 2.924 1.733 5.5 4.35 7.072L5.5 21l3.6-2.1A11.2 11.2 0 0012 19c5.523 0 10-3.582 10-8s-4.477-8-10-8z"/>
           </svg>
           카카오톡으로 공유하기
         </button>
-        <p class="bgm-credit">BGM: <a href="https://youtu.be/iH_68j7BzxM?si=mxdtVm_0JcqrwcHT" target="_blank">유튜브 링크</a></p>
+        <p class="bgm-credit" style="color:#888; font-size:0.85rem; margin-top:2.5rem; font-weight:300;">BGM: <a href="https://youtu.be/iH_68j7BzxM" target="_blank" style="color:#aaa; text-decoration:underline;">유튜브 링크</a></p>
       </div>
-      <div class="bottom-bar nav-buttons" style="background:transparent;">
-        <button class="btn-prev" onclick="goPrev(19)">← 이전</button>
-        <button class="btn-next" onclick="showScene(0)">처음으로 ↺</button>
+      <div class="bottom-bar dark-bar nav-buttons">
+        <button class="btn-prev dark-btn-prev" onclick="goPrev(14)">← 이전</button>
+        <button class="btn-next dark-btn" onclick="showScene(0)" style="background:rgba(212,175,55,0.15); color:#D4AF37; border:1px solid #D4AF37;">처음으로 ↺</button>
       </div>
     </div>
   </section>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=5"></script>
 </body>
 
 </html>

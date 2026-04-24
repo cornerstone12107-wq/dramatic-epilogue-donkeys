@@ -6,8 +6,8 @@
 // ─── 카카오 JavaScript 키 (발급받은 키로 교체하세요) ───
 const KAKAO_APP_KEY = 'YOUR_KAKAO_JAVASCRIPT_KEY';
 
-// ─── 전체 씬 수 (scene-0 ~ scene-19) ───
-const TOTAL_SCENES = 20;
+// ─── 전체 씬 수 (scene-0 ~ scene-14) ───
+const TOTAL_SCENES = 15;
 
 let currentScene = 0;
 let soundOn = false;
